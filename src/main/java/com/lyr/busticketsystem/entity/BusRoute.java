@@ -20,7 +20,7 @@ public class BusRoute implements Serializable {
      * 车次ID（主键）
      */
     @TableId(value = "route_id", type = IdType.AUTO)
-    private Integer routeId;
+    private Long routeId;
 
     /**
      * 车次名称

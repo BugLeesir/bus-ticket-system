@@ -1,5 +1,6 @@
 package com.lyr.busticketsystem.service;
 
+import com.lyr.busticketsystem.dto.MemberDTO;
 import com.lyr.busticketsystem.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -9,5 +10,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2025-03-12 04:22:41
 */
 public interface UserService extends IService<User> {
-
+    /**
+     * 添加会员
+     * @param memberDTO
+     * @return
+     */
+    boolean addMember(MemberDTO memberDTO);
 }

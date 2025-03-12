@@ -18,19 +18,19 @@ public class RolePermission implements Serializable {
      * 主键ID
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    private Long id;
 
     /**
      * 角色ID
      */
     @TableField(value = "role_id")
-    private Integer roleId;
+    private Long roleId;
 
     /**
      * 权限ID
      */
     @TableField(value = "permission_id")
-    private Integer permissionId;
+    private Long permissionId;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

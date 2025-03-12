@@ -19,7 +19,7 @@ public class Announcement implements Serializable {
      * 公告ID（主键）
      */
     @TableId(value = "announcement_id", type = IdType.AUTO)
-    private Integer announcementId;
+    private Long announcementId;
 
     /**
      * 公告标题

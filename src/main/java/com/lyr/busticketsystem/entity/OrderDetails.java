@@ -18,13 +18,13 @@ public class OrderDetails implements Serializable {
      * 订单详情ID（主键）
      */
     @TableId(value = "detail_id", type = IdType.AUTO)
-    private Integer detailId;
+    private Long detailId;
 
     /**
      * 关联订单ID
      */
     @TableField(value = "order_id")
-    private Integer orderId;
+    private Long orderId;
 
     /**
      * 乘客姓名

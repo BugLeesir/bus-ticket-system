@@ -18,19 +18,19 @@ public class UserRole implements Serializable {
      * 主键ID
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    private Long id;
 
     /**
      * 用户ID
      */
     @TableField(value = "user_id")
-    private Integer userId;
+    private Long userId;
 
     /**
      * 角色ID
      */
     @TableField(value = "role_id")
-    private Integer roleId;
+    private Long roleId;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

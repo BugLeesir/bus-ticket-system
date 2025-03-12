@@ -25,7 +25,7 @@ public class Message implements Serializable {
      * 留言用户ID
      */
     @TableField(value = "user_id")
-    private Integer userId;
+    private Long userId;
 
     /**
      * 留言内容
@@ -37,7 +37,7 @@ public class Message implements Serializable {
      * 回复的留言ID（可为空）
      */
     @TableField(value = "reply_id")
-    private Integer replyId;
+    private Long replyId;
 
     /**
      * 留言时间

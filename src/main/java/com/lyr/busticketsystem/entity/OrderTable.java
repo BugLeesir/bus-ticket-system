@@ -19,19 +19,19 @@ public class OrderTable implements Serializable {
      * 订单ID（主键）
      */
     @TableId(value = "order_id", type = IdType.AUTO)
-    private Integer orderId;
+    private Long orderId;
 
     /**
      * 下单用户ID
      */
     @TableField(value = "user_id")
-    private Integer userId;
+    private Long userId;
 
     /**
      * 关联车次ID
      */
     @TableField(value = "route_id")
-    private Integer routeId;
+    private Long routeId;
 
     /**
      * 订单状态（待支付:0/已支付:1/已取消:2）
